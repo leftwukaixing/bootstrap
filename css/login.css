@@ -1,0 +1,96 @@
+@import url("common.css");
+body {
+	position: relative;
+	margin:0;
+	padding:0;
+	background: url(../images/login.jpg) no-repeat;
+	background-size: 100%;
+}
+.form-wrapper { 
+	width: 340px;
+	background: rgba(255,255,255,0.5);
+	margin: 0 auto;
+	padding: 50px 30px;
+	position: relative;
+	top: 150px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+}
+.form-group { 
+	margin-bottom: 30px; 
+}
+.form-group label {
+	width: 70px; 
+	text-align: right; 
+	margin-right: 5px; 
+}
+label{
+	display:inline-block;
+	max-width:100%;
+	margin-bottom:5px;
+	font-weight:700
+}
+.form-group input { 
+	display: inline-block; 
+	width: 220px; 
+	
+}
+.form-control{
+	height:34px;
+	padding:6px 12px;
+	font-size:14px;
+	line-height:1.42857143;
+	background-color:#fff;
+	background-image:none;
+	border:1px solid #ccc;
+	border-radius:4px;
+	-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
+	-webkit-transition:border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;	
+	transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s
+}
+.form-control:focus{
+	border-color:#66afe9;
+	outline:0;
+	-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+	box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+}
+.form-control::-moz-placeholder{
+	color:#999;
+	opacity:1
+}
+.form-control:-ms-input-placeholder{
+	color:#999
+}
+.form-control::-webkit-input-placeholder{
+	color:#999
+}
+.btn-container{
+	text-align:center
+}
+.btn{
+	display:inline;
+    background-color:#5bc0de;
+    border-color:#46b8da;
+    color:white;
+    font-size:14px;
+    margin:0 auto;
+    padding: 7px 24px;
+    font-weight:600;
+    line-height:1.42857143;
+    white-space:nowrap;
+    vertical-align:middle;
+    cursor:pointer;
+    border:1px solid transparent;
+    border-radius:4px;
+    font-family:HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.btn:hover{
+    background-color:rgb(74, 164, 180);
+}
+.warn{
+	text-align:center;
+	color:red;
+	font-size:14px;
+	margin-bottom:20px
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>注册</title>
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script src="script/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="bootstrap/js/unslider.js"></script>
+	<link href="css/cloud-admin.min.css" rel="stylesheet" />
+	<link href="css/default.css" rel="stylesheet" />
+	<link href="css/animate.min.css" rel="stylesheet" />
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+	<script src="script/home.js"></script>
+	<script type="text/javascript" src="script/bootstrap-datetimepicker.min.js"></script>
+	<script type="text/javascript" src="script/bootstrap-datetimepicker.zh-CN.js"></script>
+	<link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+			.checkbox{ 
+				background:#fff; 
+				width:20px; 
+				height:20px; 
+				vertical-align:middle; 
+				margin:0 5px;
+				display:inline;
+			}
+		</style>
+  </head>
+  
+  <body>
+    <div id="header" class="navbar clearfix" style="background-color: #00dddd">
+  		<div class="container">
+  			<ul class="nav navbar-nav pull-left">
+  				<li class="dropdown user" id="header-user">
+  				<a class="dropdown-toggle" href="MyHome.html">
+  					<span class="username">主页</span>
+  				</a>
+  			</ul>
+  			<ul class="nav navbar-nav pull-left">
+  				<li class="dropdown user" id="header-user">
+  				<a class="dropdown-toggle" href="register.html">
+  					<span class="username">注册</span>
+  				</a>
+  			</ul>
+  			<ul class="nav navbar-nav pull-right">
+  				<li class="dropdown user" id="header-user">
+  				<a class="dropdown-toggle" href="MyLogin.html">
+  					<span class="username">登录</span>
+  				</a>
+		    </ul>
+		</div>
+  	</div>
+  	
+  	<div class="col-md-6" style="margin-left: 150px;margin-top:100px">
+  		<form class="form-horizontal" id="formid" action="#" method="post">
+  			<div class="form-group">
+  				<label class="col-sm-2 control-label" for="placeholder">用户名:</label>
+  				<div class="col-sm-6">
+  					<input class="form-control" id="fname" name="fname" type="text">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label" for="placeholder">密&nbsp;&nbsp;&nbsp;&nbsp;码:</label>
+				<div class="col-sm-6">
+					<input class="form-control" id="fname" name="fname" type="text">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label" for="placeholder">确认密码:</label>
+				<div class="col-sm-6">
+					<input class="form-control" id="fname" name="fname" type="text">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label">性&nbsp;&nbsp;&nbsp;&nbsp;别:</label>
+				<div class="col-sm-6">
+					<label><input name="sex" type="radio" value="男" />&nbsp;&nbsp;男</label>
+					<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+					<label><input name="sex" type="radio" value="女" />&nbsp;&nbsp;女</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label">出生年月：</label>
+				<div class="col-sm-6">
+					<div class="input-group date form_date col-sm-4">
+						<input class="form-control" type="text" size="16" readonly="readonly" value="#" name="birth" style="background:white"/>
+				        <span class="input-group-addon">
+				        <span class="glyphicon glyphicon-remove"></span>
+				        </span>
+						<span class="input-group-addon">
+						<span class="glyphicon glyphicon-calendar"></span>
+						</span>
+					</div>
+			        <script type="text/javascript">
+			        	$(".form_date").datetimepicker({
+			        		language:  'zh-CN',
+			        		format: 'yyyy.mm',
+			        		weekStart: 1,
+			        		todayBtn:  1,
+			        		autoclose: 1,
+			        		todayHighlight: 1,
+			        		startView: 3,
+			        		minView: 3,
+			        		forceParse: 0
+			        	});
+			        </script>
+			     </div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-10">
+					<button class="btn btn-info" type="submit" id="register">注册</button>
+				</div>
+			</div>
+		</form>
+	</div>
+  	<div class="other-login-way" style="margin-top:100px">
+  		<div class="form-group">
+  			<a href="#" class="btn btn-info ">Q Q 账号登录</a>
+  		</div>
+  		<div class="form-group">
+  			<a href="#" class="btn btn-danger ">微博账号登录</a>
+  		</div>
+  		<div class="form-group">
+  			<a href="#" class="btn btn-success ">微信账号登录</a>
+  		</div>
+  	</div>
+  </body>
+</html>
